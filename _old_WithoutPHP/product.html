@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  
+  <title>Product Page</title>
+</head>
+<body style="background-image: url(Images/Sec1bg.jpg)">
+
+  <div class="container-fluid">
+
+    <div class="row align-items-center bg-dark p-2 ">
+      <div class="col-md-3 d-none d-md-block text-light">(+374) 077-09-69-**</div>
+      <div class="col-md-3 d-none d-md-block text-light">Welcome to the store</div>
+      <div class="col-md-2 col-6 d-md-block "> 
+       <select class="custom-select">
+        <option selected>AM</option>
+        <option value="1">RU</option>
+        <option value="2">EN</option>
+      </select>
+    </div>
+    <div class="col-md-2 col-6 d-md-block ">
+      <select class="custom-select">
+        <option selected>֏</option>
+        <option value="1">₽</option>
+        <option value="2">$</option>
+      </select>
+    </div>
+    <div class="col-md-2 col-lg-2 d-none d-md-block d-sm-none">
+     <button type="button" class="btn btn-outline-light float-right">
+      Wishlist <span class="badge badge-light">0</span>
+    </button>
+  </div>
+</div>
+<div class="row   align-items-center p-1 bg-light text-light">
+  <div class="col-6 col-md-2 ">
+    <a href="index.html" class="link ml-1"><img src="Images/tortoise_rgb.png" alt="" loading="lazy" width="100" height="50"></a>
+  </div>
+  <div class="col-md-8  d-none d-md-block ">
+    <form class="form-inline float-right mr-3">
+      <input  class="form-control mr-sm-2 bg-outline-light border-dark text-dark btn-outline-light" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn bg-light btn-dark my-2 my-sm-0  text-dark" type="submit">Search</button>
+    </form>
+  </div>
+  <div class="col-6 col-md-2 pr-3 ">
+   <div class="dropdown float-right ">
+    <button class="btn text-dark dropdown-toggle bg-light btn-dark" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      My account
+    </button>
+    <!--Made by Miakyel-->
+    <div class="dropdown-menu dropdown-menu-right " aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="shop.html" data-toggle="modal" data-target="#exampleModal">Login</a>
+      <a class="dropdown-item" href="shop.html"  data-toggle="modal" data-target="#Register">Register</a>
+      <a class="dropdown-item" href="myorders.html">My Orders</a>
+      <a class="dropdown-item" href="myaccount.html">Account Settings</a>
+    </div>
+  </div>
+</div>
+</div>
+<div class="row">   
+  <nav class="text-center text-light align-items-center navbar navbar-expand-lg navbar-dark bg-dark col-md-12">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNabg-darkropdown" aria-controls="navbarNabg-darkropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse navbar-dark bg-dark text-light" id="navbarNabg-darkropdown">
+      <ul class="navbar-nav mr-auto ml-auto ">
+        <li class="nav-item dropdown text-center">
+          <a class="nav-link dropdown-toggle text-light" href="shop.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true"  aria-expanded="false"> <!--Made by Miakyel-->
+            Turtles
+          </a>
+          <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item bg-dark text-light" href="shop.html">Food</a>
+            <a class="dropdown-item bg-dark text-light" href="shop.html">Aquarium</a>
+            <a class="dropdown-item bg-dark text-light" href="shop.html">Equipment</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown text-center">
+          <a class="nav-link dropdown-toggle text-light" href="shop.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true"  aria-expanded="false"> <!--Made by Miakyel-->
+            Fish
+          </a>
+          <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item bg-dark text-light" href="shop.html">Food</a>
+            <a class="dropdown-item bg-dark text-light" href="shop.html">Aquarium</a>
+            <a class="dropdown-item bg-dark text-light" href="shop.html">Accessories</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown text-center">
+          <a class="nav-link dropdown-toggle text-light" href="shop.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true"  aria-expanded="false"> <!--Made by Miakyel-->
+            Dogs
+          </a>
+          <div class="dropdown-menu bg-dark text-light" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item bg-dark text-light" href="shop.html">Food</a>
+            <a class="dropdown-item bg-dark text-light" href="shop.html">Toys</a>
+            <a class="dropdown-item bg-dark text-light" href="shop.html">Beds/Kennels</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown text-center">
+          <a class="nav-link dropdown-toggle text-light" href="shop.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true"  aria-expanded="false"> <!--Made by Miakyel-->
+            Cats
+          </a>
+          <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item bg-dark text-light" href="shop.html">Food</a>
+            <a class="dropdown-item bg-dark text-light" href="shop.html">Toys</a>
+            <a class="dropdown-item bg-dark text-light" href="shop.html">Beds/Kennels</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<!--Header-->
+<!--BreadCrumb-->
+<div class="row mt-3">
+  <div class="col-md-6 d-none d-md-block d-sm-none bg-light mt-1 text-decoration-none bg-dark text-light pt-4 pb-2">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a class="text-decoration-none text-dark" href="#">Home</a></li>
+        <li class="breadcrumb-item"><a class="text-decoration-none text-dark" href="#">Cats</a></li>
+        <li class="breadcrumb-item active text-primary" aria-current="page">Bichir</li>
+      </ol>
+    </nav>
+  </div>
+  <div class="col-md-6 d-none d-md-block d-sm-none bg-light mt-1 text-decoration-none bg-dark text-light justify-content-center pt-1">
+    <form action="" class="form-inline col-12 col-md-auto pt-4 ml-auto">
+      <label for="sortBy" class="mr-2 pt-1 ml-auto col-md-auto d-md-block d-none">Sort By</label>
+      <select class="custom-select col-md-auto d-md-block d-none bg-dark text-light pt-1" id="sortBy">
+        <option value="1">Price: Low to High</option>
+        <option value="2">Price: High to Low</option>
+        <option value="3">By Rating</option>
+      </select>
+    </form>
+  </div>
+</div>
+<!--BreadCrumb-->
+<div class="row mt-4">
+  <div class="col-12 mb-2">
+    <h2 class="text-primary font-weight-bold">Bichir, Captive-Bred </h2>
+  </div>
+</div>
+<!--Images And Description-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <div class="row">
+        <div class="col-3">
+          <a class="border d-inline-block m-1 p-1" data-fancybox="gallery" href="Images/Weeksii-Bichir.jpg"><img
+            class="img-fluid" src="Images/Weeksii-Bichir.jpg"></a>
+            <a class="border d-inline-block m-1 p-1" data-fancybox="gallery" href="Images/P.-Senegalus_640_x_480.jpg"><img
+              class="img-fluid" src="Images/P.-Senegalus_640_x_480.jpg"></a>
+              <a class="border d-inline-block m-1 p-1" data-fancybox="gallery" href="Images/dinosaur-bichir-featured.jpg"><img
+                class="img-fluid" src="Images/dinosaur-bichir-featured.jpg"></a>
+                <a class="border d-inline-block m-1 p-1" data-fancybox="gallery" href="Images/dinosaur-bichir-featured.jpg"><img
+                  class="img-fluid" src="Images/20191228_153250.jpg"></a>
+                </div>
+                <div class="col">
+                  <a class="" data-fancybox="gallery" href="Images/lg_89854_Cuvier_Bichir.jpg"><img class="img-fluid" src="Images/lg_89854_Cuvier_Bichir.jpg"></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="row">
+                <div class="col-12">
+                  <h3 class="font-weight-bold pl-5 mt-5">$14.99</h3>
+                </div>
+              </div>
+              <form class="w-100 row pl-5" action="">
+                <div class="col-12 col-md-5">
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-sm">Quantity</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm" value="1">
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                 <a href="card.html" class="btn btn-outline-dark" tabindex="-1" role="button" aria-disabled="true">Add To Cart</a>
+                </div>
+              </form>
+              <div class="row pl-5">
+                <div class="col-12">
+                  <p class="font-weight-bold my-2">Options</p>
+                </div>
+                <div class="col-12">
+                  <form action="">
+                    <div class="custom-control custom-switch custom-control-inline">
+                      <input type="checkbox" id="mouse" name="customRadioInline1" class="custom-control-input">
+                      <label class="custom-control-label" for="mouse">Normal</label>
+                    </div>
+                    <div class="custom-control custom-switch custom-control-inline">
+                      <input type="checkbox" id="earphone" name="customRadioInline1" class="custom-control-input">
+                      <label class="custom-control-label" for="earphone">Albino</label>
+                    </div>
+                  </form>
+                </div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-2">Species</p>
+                </div>
+                <div class="col-6">
+                  <select class="custom-select">
+                    <option selected>Dinosaur Bichir</option>
+                    <option value="1">Ornate Bichir</option>
+                    <option value="2">Delhezi Bichir</option>
+                    <option value="3">Saddled Bichir</option>
+                    <option value="4">Albino Bichir</option>
+                  </select>
+                </div>
+                <div class="col-6"></div>
+                <div class="col-12">
+                  <p class="font-weight-bold mt-3">Gender</p>
+                </div>
+                <div class="col-6">
+                  <select class="custom-select">
+                    <option selected>Male</option>
+                    <option value="2">Female</option>
+                  </select>
+                </div>
+                <div class="col-6"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!--Images And Description-->
+        <div class="row mt-3">
+          <div class="accordion w-100" id="accordionExample">
+            <ul class="nav nav-tabs">
+              <li class="nav-item" id="headingOne">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                aria-controls="collapseOne">Overview</a>
+              </li>
+              <li class="nav-item" id="headingTwo">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                aria-controls="collapseTwo">Rating</a>
+              </li>
+            </ul>
+            <div class="card">
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+              data-parent="#accordionExample">
+              <div class="card-body">
+                <p class="font-weight-bold">Quick Stats</p>
+                <ul>
+                  <li>Max. Size: 1' 6"</li>
+                  <li>Temperament: Semi-Aggressive.</li>
+                  <li>Color Form: Black, Green.</li>
+                  <li>Diet: Carnivore.</li>
+                  <li>Water Conditions: 77-80° F, KH 8-12, pH 6.5-7.5 </li>
+                  <li>Origin: Captive-Bred.</li>
+                  <li>Family: Polypteridae.</li>
+                  <li>Minimum: Tank Size 90 gallons.</li>
+                </ul>
+                The Cuvier Bichir, also called the Senegal Bichir, Gray Bichir, or Dragonfin, is a member of the Polypteridae, or Lobe-Finned Pike family. This species is Captive-Bred, but is endemic to the streams and rivers of Africa. As with other members of the primitive Polypteridae family, the Cuvier Bichir has the unique ability to survive out of water. With a lung-like paired swim bladder and gills to help breathing, the Cuvier Bichir can spend short periods of time on land, but must soon return to its water environment for adequate respiration. This species is brown in color with an elongated snakelike body. 
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                <span class="w-25">Care Level</span>
+                <div class="progress">
+                  <div class="progress-bar bg-primary" role="progressbar" style="width: 25%" aria-valuenow="10"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row d-md-block d-none">
+       <div class="d-flex justify-content-center">
+         <h4 class="mx-auto pt-4">Other Things You Might be Interested In</h4>
+       </div>
+       <div class="col-md-12 d-md-block col d-flex justify-content-space-around">
+        <div class="d-flex mt-3 border-top">
+          <div class="card col-md-3 d-md-block d-none mx-auto mt-5 d-flex justify-content-center" style="width: 24rem;">
+            <img src="Images/th-coral-food-category-thumb.jpg" class="card-img-top" alt="...">
+            <div class="card-body d-flex justify-content-center">
+              <a href="#" class="card-link">Coral Food</a>
+            </div>
+          </div>
+          <div class="card col-md-3 d-md-block d-none mx-auto mt-5" style="width: 24rem;">
+            <img src="Images/th_89859_Banded_Leporinus.jpg" class="card-img-top" alt="...">
+            <div class="card-body d-flex justify-content-center">
+              <a href="#" class="card-link">Banded Leporinus</a>
+            </div>
+          </div>
+          <div class="card col-md-3 d-md-block d-none mx-auto mt-5" style="width: 24rem;">
+            <img src="Images/th_89913_Boesemani_Rainbowfish.jpg" class="card-img-top" alt="...">
+            <div class="card-body d-flex justify-content-center">
+              <a href="#" class="card-link">Boesemni Rainbow Fish</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row text-center bg-dark text-light text-uppercase p-3 mt-5">
+      <div class="col-12 col-md">
+        <a href="" class="nav-link  text-light h6">contact us</a> 
+      </div>
+      <div class="col-12 col-md">
+        <a href="" class="nav-link  text-light h6">Live chat</a> 
+      </div>
+      <div class="col-12 col-md ">
+        <a href="" class="nav-link text-light h6">shipping</a>
+      </div>
+      <div class="col-12 col-md ">
+        <a href="" class="nav-link text-light h6">term & conditions</a> 
+      </div>
+    </div>
+    <div class="row">
+     <div class="col d-none d-md-block bg-dark">
+      <ul class="list-group list-group-flush rounded-bottom bg-dark pl-5 ml-5">
+        <li class="list-group-item text-light bg-dark font-weight-bold"><a href="" class="text-decoration-none text-light">Social Media</a></li>
+        <li class="list-group-item text-light bg-dark"><a href="" class="text-decoration-none text-light">Messenger</a></li>
+        <li class="list-group-item text-light bg-dark"><a href="" class="text-decoration-none text-light">Twitter</a></li>
+        <li class="list-group-item text-light bg-dark"><a href="" class="text-decoration-none text-light">Tumblr</a></li>
+        <li class="list-group-item text-light bg-dark"><a href="" class="text-decoration-none text-light">Telegram</a></li>
+      </ul>
+    </div>
+    <div class="col d-none d-md-block bg-dark">
+      <ul class="list-group list-group-flush rounded-bottom bg-dark pl-5">
+        <li class="list-group-item text-light bg-dark font-weight-bold"><a href="" class="text-decoration-none text-light">Other</a></li>
+        <li class="list-group-item text-light bg-dark"><a href="" class="text-decoration-none text-light">Discord Server</a></li>
+        <li class="list-group-item text-light bg-dark"><a href="" class="text-decoration-none text-light">About Us</a></li>
+        <li class="list-group-item text-light bg-dark"><a href="" class="text-decoration-none text-light">Why Pick Us?</a></li>
+        <li class="list-group-item text-light bg-dark"><a href="" class="text-decoration-none text-light">Send Feedback</a></li>
+      </ul>
+    </div>
+    <div class="col d-none d-md-block bg-dark">
+      <ul class="list-group list-group-flush rounded-bottom bg-dark pl-3">
+        <li class="list-group-item text-light bg-dark font-weight-bold"><a href="" class="text-decoration-none text-light">Support</a></li>
+        <li class="list-group-item text-light bg-dark"><a href="" class="text-decoration-none text-light">Message Us</a></li>
+        <li class="list-group-item text-light bg-dark"><a href="" class="text-decoration-none text-light">Privacy & Policy</a></li>
+      </ul>
+    </div>
+    <div class="col d-none d-md-block bg-dark">
+      <ul class="list-group list-group-flush rounded-bottom bg-dark">
+        <li class="list-group-item text-light bg-dark font-weight-bold"><a href="" class="text-decoration-none text-light">Events</a></li>
+        <li class="list-group-item text-light bg-dark"><a href="" class="text-decoration-none text-light">News</a></li>
+        <li class="list-group-item text-light bg-dark"><a href="" class="text-decoration-none text-light">Blogs</a></li>
+        <li class="list-group-item text-light bg-dark"><a href="" class="text-decoration-none text-light">Publications</a></li>
+        <li class="list-group-item text-light bg-dark"><a href="" class="text-decoration-none text-light">Changes/Additions</a></li>
+      </ul>
+    </div>
+    <div class="col d-none d-md-block bg-dark">
+      <ul class="list-group list-group-flush rounded-bottom bg-dark text-success">
+        <li class="list-group-item text-light bg-dark font-weight-bold"><a href="" class="text-decoration-none text-light">Useful Websites</a></li>
+        <li class="list-group-item text-light bg-dark"><a href="" class="text-decoration-none text-light">SoPets</a></li>
+        <li class="list-group-item text-light bg-dark"><a href="" class="text-decoration-none text-light">Web Vet</a></li>
+        <li class="list-group-item text-light bg-dark"><a href="" class="text-decoration-none text-light">Pet Health Information</a></li>
+        <li class="list-group-item text-light bg-dark"><a href="" class="text-decoration-none text-light">PawsPlus</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row bg-dark text-light ">
+    <div class="col-12 text-center pt-3">
+      <a href="#"> <img  class=" mr-2 ml-2 float-left pt-2" src="https://image.flaticon.com/icons/svg/323/323477.svg" loading="lazy" width="30" height="30"></a>
+      <a href="#"><img  class=" mr-2 ml-2 float-left pt-2" src="https://image.flaticon.com/icons/svg/216/216578.svg" loading="lazy" width="30" height="30"></a>
+      <a href="#"><img  class=" mr-2 ml-2 float-left pt-2" src="https://image.flaticon.com/icons/svg/323/323437.svg"  loading="lazy" width="30" height="30"></a>
+      <a href="#"><img class=" mr-2 ml-2 float-left pt-2" src="https://image.flaticon.com/icons/svg/216/216576.svg" loading="lazy" width="30" height="30"></a>
+      <p class="text-center pt-2 pb-2 text-light float-right">&copy; Mikayel Kananov</p>
+    </div>
+    <div class="modal" tabindex="-1" role="dialog" id="exampleModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header text-dark">
+            <h5 class="modal-title" class="text-dark">Login</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1" class="text-dark">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted text-dark">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1" class="text-dark">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1" class="text-dark">Remember Credentials</label>
+              </div>
+              <button type="submit" class="btn btn-primary" class="text-dark">Login</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Modals-->
+  <div class="modal" tabindex="-1" role="dialog" id="exampleModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header text-dark">
+          <h5 class="modal-title" class="text-dark">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1" class="text-dark">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted text-dark">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1" class="text-dark">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1" class="text-dark">Remember Credentials</label>
+            </div>
+            <button type="submit" class="btn btn-primary" class="text-dark">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" tabindex="-1" role="dialog" id="Register">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header text-dark">
+          <h5 class="modal-title" class="text-dark">Register</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="needs-validation" novalidate>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="validationTooltip01" class="text-dark">First name</label>
+                <input type="text" class="form-control" id="validationTooltip01" value="Mikayel" required>
+                <div class="valid-tooltip" class="text-dark">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="validationTooltip02" class="text-dark">Last name</label>
+                <input type="text" class="form-control" id="validationTooltip02" value="Kananov" required>
+                <div class="valid-tooltip" class="text-dark">
+                  Looks good!
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="validationTooltip03" class="text-dark">City</label>
+                <input type="text" class="form-control" id="validationTooltip03" required>
+                <div class="invalid-tooltip" class="text-dark">
+                  Please provide a valid city.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="validationTooltip04" class="text-dark">Gender</label>
+                <select class="custom-select" id="validationTooltip04" required>
+                  <option selected disabled value="">Choose...</option>
+                  <option>Female</option>
+                  <option>Male</option>
+                </select>
+                <div class="invalid-tooltip" class="text-dark">
+                  Please select a valid state.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="validationTooltip05" class="text-dark">Phone Number</label>
+                <input type="text" class="form-control" id="validationTooltip05" required>
+                <div class="invalid-tooltip" class="text-dark">
+                  Please provide a valid zip.
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit" class="text-dark">Submit form</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+  crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
