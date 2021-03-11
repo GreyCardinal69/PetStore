@@ -6,21 +6,9 @@
 body{
 	font-family: 'Josefin Sans', sans-serif;
 	background-color: #f0f2f5;
-	background-image: url(../img/Sec1bg.jpg);
 }
 img{
 	width: 100%;
-}
-.header_top-logo{
-	width: 200px;
-}
-.sidebar{
-	width: 300px;
-	box-shadow: 1px 0px 3px #ccc;
-	padding: 15px;
-	position: fixed;
-	height: 100%;
-	background-color: black;
 }
 .header_top{
 	display: flex;
@@ -51,10 +39,10 @@ img{
 	transition: all .25s ease;
 }
 .header_top-navigation ul li a.active{
-	background-color: black;
+	background-color: #2d88ff1a;
 }
 .header_top-navigation ul li a:hover{
-	background-color: black;
+	background-color: #2d88ff1a;
 }
 .main{
 	margin-left: 300px;
@@ -70,14 +58,14 @@ img{
 	align-items: flex-end;
 }
 .copyright{
-	border-top: 1px solid black;
+	border-top: 1px solid #cccccc7a;
 	padding: 15px 0px;
 	text-align: center;
 	width: 100%;
 }
 .main_content{
 	width: 100%;
-	background: black;
+	background: #fff;
 	padding: 10px;
 	border-radius: 5px;
 	box-shadow: 0px 0px 3px #ccc;
@@ -90,14 +78,14 @@ img{
 	height: 30px;
 	margin: 10px 0px;
 	padding: 5px;
-	border: 1px solid black;
+	border: 1px solid #ccc;
 	border-radius: 5px;
 }
 .main_content-form input:focus,.main_content-form textarea:focus{
 	border-color: #80bdff;;
 	outline: 0;
 	background-color: #fff;
-	box-shadow: 0 0 5px 0.2rem black;
+	box-shadow: 0 0 5px 0.2rem rgba(0,123,255,.25);
 }
 .main_content-form textarea{
 	width: 100%;
@@ -125,13 +113,13 @@ img{
 }
 
 .products_table td, .products_table th {
-  border: 1px solid black;
+  border: 1px solid #ddd;
   padding: 8px;
 }
 
-.products_table tr:nth-child(even){background-color: black;}
+.products_table tr:nth-child(even){background-color: #f2f2f2;}
 
-.products_table tr:hover {background-color: black;}
+.products_table tr:hover {background-color: #ddd;}
 
 .products_table th {
   padding-top: 12px;
@@ -147,7 +135,7 @@ img{
 	display: block;
 	width: 100%;
 	color: #fff;
-	background-color: black;
+	background-color: #32b6af;
 	padding: 10px;
 	text-align: center;
 	border-radius: 5px;

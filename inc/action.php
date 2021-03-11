@@ -10,8 +10,9 @@ function select($table, $where=NULL){
 	global $db;
 	if ($where != NULL) {
 		$sql = 	'SELECT * FROM '.$table.' WHERE id='.$where;
+		return mysqli_query($db,$sql);
 	}else{
-		$sql = 'SELECT * FROM '.$table.'`';
+		$sql = 'SELECT * FROM `'.$table.'`';
 	}
 	return $result = mysqli_query($db, $sql);
 }

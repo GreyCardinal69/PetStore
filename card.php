@@ -1,6 +1,6 @@
 <?php include 'inc/header.php' ?>
 <!--header-->
-<?php $result=select('products',$_GET['id']);$r=mysqli_fetch_object($result);?>
+<?php $result=$db->query('SELECT id, price, name, img FROM `products` ');$r=mysqli_fetch_object($result);?>
 <div class="row">
   <div class="col-12">
    <table class="table table-bordered table-sm justify-content-center mt-5 mb-5">

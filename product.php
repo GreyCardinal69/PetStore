@@ -1,12 +1,17 @@
 <?php include 'inc/header.php' ?>
 <!--Header-->
 <!--BreadCrumb-->
-<div class="row mt-3">
+<div class="row">
   <div class="col-md-6 d-md-block bg-dark text-light pt-4 pb-2">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a class="text-decoration-none text-dark" href="product.php">Products</a></li>
         <li class="breadcrumb-item"><a class="text-decoration-none text-dark" href="index.php">Home Page</a></li>
+        <li class="breadcrumb-item"><a class="text-decoration-none active text-primary" href="product.php">All Products /</a></li>
+        <?php $randomResult = select('products');
+        $random = rand(0,1);
+        $randomResult = mysqli_query($db, "SELECT id FROM products order by RAND() limit 1");
+        $row = mysqli_fetch_array($randomResult); ?>
+        <a href="product.php" class="pl-1 text-decoration-none"><li class="breadcrumb-item <?php active('single.php');?>"><a class="text-decoration-none text-dark" href="single.php?id=<?php echo $row['id'];?>">Random Product</a></li></a>
       </ol>
     </nav>
   </div>
@@ -134,7 +139,7 @@
 </div>
 <!-- Options -->
 <!-- Products using foreach and mysql web2 database -->
-<?php $result = select('products');?>
+<?php $result = $db->query('SELECT * FROM `products`');?>
 <div class="col-12 col-md-9 main border-right border-left">
   <div class="row justify-content-center">
     <?php foreach ($result as $value): ?>

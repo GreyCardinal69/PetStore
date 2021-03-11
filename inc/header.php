@@ -55,8 +55,8 @@
 						My account
 					</button>
 					<div class="dropdown-menu dropdown-menu-right " aria-labelledby="dropdownMenuButton">
-						<a class="dropdown-item <?php active('product.php');?>" href="product.php" data-toggle="modal" data-target="#exampleModal">Login</a>
-			<a class="dropdown-item <?php active('product.php');?>"  href="product.php"  data-toggle="modal" data-target="#Register">Register</a>
+						<a class="dropdown-item" href="product.php" data-toggle="modal" data-target="#exampleModal">Login</a>
+						<a class="dropdown-item" href="product.php"  data-toggle="modal" data-target="#Register">Register</a>
 						<a class="dropdown-item <?php active('myorders.php');?>" href="myorders.php">My Orders</a>
 						<a class="dropdown-item <?php active('myaccount.php');?>" href="myaccount.php">Account Settings</a>
 					</div>

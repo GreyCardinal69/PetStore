@@ -21,60 +21,60 @@
   </div>
   <div class="row text-center bg-dark text-light text-uppercase p-3">
     <div class="col-12 col-md">
-      <a href="" class="nav-link  text-light h6">contact us</a> 
+      <a href="index.php" class="nav-link  text-light h6">contact us</a> 
     </div>
     <div class="col-12 col-md">
-      <a href="" class="nav-link  text-light h6">Live chat</a> 
+      <a href="index.php" class="nav-link  text-light h6">Live chat</a> 
     </div>
     <div class="col-12 col-md ">
-      <a href="" class="nav-link text-light h6">shipping</a>
+      <a href="index.php" class="nav-link text-light h6">shipping</a>
     </div>
     <div class="col-12 col-md ">
-      <a href="" class="nav-link text-light h6">term & conditions</a> 
+      <a href="index.php" class="nav-link text-light h6">term & conditions</a> 
     </div>
   </div>
   <div class="row">
    <div class="col d-none d-md-block bg-dark">
     <ul class="list-group list-group-flush rounded-bottom bg-dark pl-5 ml-5">
       <li class="list-group-item text-light bg-dark font-weight-bold"><a href="" class="text-decoration-none text-light">Social Media</a></li>
-      <li class="list-group-item text-light bg-dark"><a href="" class="text-decoration-none text-light">Messenger</a></li>
-      <li class="list-group-item text-light bg-dark"><a href="" class="text-decoration-none text-light">Twitter</a></li>
-      <li class="list-group-item text-light bg-dark"><a href="" class="text-decoration-none text-light">Tumblr</a></li>
-      <li class="list-group-item text-light bg-dark"><a href="" class="text-decoration-none text-light">Telegram</a></li>
+      <li class="list-group-item text-light bg-dark"><a href="index.php" class="text-decoration-none text-light">Messenger</a></li>
+      <li class="list-group-item text-light bg-dark"><a href="index.php" class="text-decoration-none text-light">Twitter</a></li>
+      <li class="list-group-item text-light bg-dark"><a href="index.php" class="text-decoration-none text-light">Tumblr</a></li>
+      <li class="list-group-item text-light bg-dark"><a href="index.php" class="text-decoration-none text-light">Telegram</a></li>
     </ul>
   </div>
   <div class="col d-none d-md-block bg-dark">
     <ul class="list-group list-group-flush rounded-bottom bg-dark pl-5">
       <li class="list-group-item text-light bg-dark font-weight-bold"><a href="" class="text-decoration-none text-light">Other</a></li>
-      <li class="list-group-item text-light bg-dark"><a href="" class="text-decoration-none text-light">Discord Server</a></li>
-      <li class="list-group-item text-light bg-dark"><a href="" class="text-decoration-none text-light">About Us</a></li>
-      <li class="list-group-item text-light bg-dark"><a href="" class="text-decoration-none text-light">Why Pick Us?</a></li>
-      <li class="list-group-item text-light bg-dark"><a href="" class="text-decoration-none text-light">Send Feedback</a></li>
+      <li class="list-group-item text-light bg-dark"><a href="index.php" class="text-decoration-none text-light">Discord Server</a></li>
+      <li class="list-group-item text-light bg-dark"><a href="index.php" class="text-decoration-none text-light">About Us</a></li>
+      <li class="list-group-item text-light bg-dark"><a href="index.php" class="text-decoration-none text-light">Why Pick Us?</a></li>
+      <li class="list-group-item text-light bg-dark"><a href="index.php" class="text-decoration-none text-light">Send Feedback</a></li>
     </ul>
   </div>
   <div class="col d-none d-md-block bg-dark">
     <ul class="list-group list-group-flush rounded-bottom bg-dark pl-3">
       <li class="list-group-item text-light bg-dark font-weight-bold"><a href="" class="text-decoration-none text-light">Support</a></li>
-      <li class="list-group-item text-light bg-dark"><a href="" class="text-decoration-none text-light">Message Us</a></li>
-      <li class="list-group-item text-light bg-dark"><a href="" class="text-decoration-none text-light">Privacy & Policy</a></li>
+      <li class="list-group-item text-light bg-dark"><a href="index.php" class="text-decoration-none text-light">Message Us</a></li>
+      <li class="list-group-item text-light bg-dark"><a href="index.php" class="text-decoration-none text-light">Privacy & Policy</a></li>
     </ul>
   </div>
   <div class="col d-none d-md-block bg-dark">
     <ul class="list-group list-group-flush rounded-bottom bg-dark">
       <li class="list-group-item text-light bg-dark font-weight-bold"><a href="" class="text-decoration-none text-light">Events</a></li>
-      <li class="list-group-item text-light bg-dark"><a href="" class="text-decoration-none text-light">News</a></li>
-      <li class="list-group-item text-light bg-dark"><a href="" class="text-decoration-none text-light">Blogs</a></li>
-      <li class="list-group-item text-light bg-dark"><a href="" class="text-decoration-none text-light">Publications</a></li>
-      <li class="list-group-item text-light bg-dark"><a href="" class="text-decoration-none text-light">Changes/Additions</a></li>
+      <li class="list-group-item text-light bg-dark"><a href="index.php" class="text-decoration-none text-light">News</a></li>
+      <li class="list-group-item text-light bg-dark"><a href="index.php" class="text-decoration-none text-light">Blogs</a></li>
+      <li class="list-group-item text-light bg-dark"><a href="index.php" class="text-decoration-none text-light">Publications</a></li>
+      <li class="list-group-item text-light bg-dark"><a href="index.php" class="text-decoration-none text-light">Changes/Additions</a></li>
     </ul>
   </div>
   <div class="col d-none d-md-block bg-dark">
     <ul class="list-group list-group-flush rounded-bottom bg-dark text-success">
       <li class="list-group-item text-light bg-dark font-weight-bold"><a href="" class="text-decoration-none text-light">Useful Websites</a></li>
-      <li class="list-group-item text-light bg-dark"><a href="" class="text-decoration-none text-light">SoPets</a></li>
-      <li class="list-group-item text-light bg-dark"><a href="" class="text-decoration-none text-light">Web Vet</a></li>
-      <li class="list-group-item text-light bg-dark"><a href="" class="text-decoration-none text-light">Pet Health Information</a></li>
-      <li class="list-group-item text-light bg-dark"><a href="" class="text-decoration-none text-light">PawsPlus</a></li>
+      <li class="list-group-item text-light bg-dark"><a href="index.php" class="text-decoration-none text-light">SoPets</a></li>
+      <li class="list-group-item text-light bg-dark"><a href="index.php" class="text-decoration-none text-light">Web Vet</a></li>
+      <li class="list-group-item text-light bg-dark"><a href="index.php" class="text-decoration-none text-light">Pet Health Information</a></li>
+      <li class="list-group-item text-light bg-dark"><a href="index.php" class="text-decoration-none text-light">PawsPlus</a></li>
     </ul>
   </div>
 </div>

@@ -1,7 +1,7 @@
 <?php include 'inc/header.php' ?>
 <!--Header-->
 <!--Bread-->
-<div class="row mt-3">
+<div class="row">
   <div class="col-md-12 d-md-block bg-dark text-light pt-4 pb-2">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
@@ -114,7 +114,7 @@
   </div>
 </div>
 <!--Info-->
-<?php $resulte = mysqli_query($db,"SELECT name, img, meta FROM products;") ;
+<?php $resulte = mysqli_query($db,"SELECT name, img, meta, id FROM products;") ;
 $rowse = mysqli_fetch_all($resulte, MYSQLI_ASSOC);
 $ids = array_column($rowse, 'img');?>
 <div class="row">
@@ -124,7 +124,7 @@ $ids = array_column($rowse, 'img');?>
       <img src="img/<?php if(file_exists(getcwd().'/img/'.$ids[$i])) {echo $ids[$i];} else {echo 'empty.png';} ?>" class="card-img-top" alt="...">
       <div class="card-body">
        <div class="d-flex justify-content-center"> <h5 class="card-title "><?php echo $rowse[$i]['name']; ?></h5></div>
-       <div class="d-flex justify-content-center"><a href="single.php" class="btn btn-primary <?php active('single.php');?>">More Info</a></div>
+       <div class="d-flex justify-content-center"><a href="single.php?id=<?php echo $rowse[$i]['id'];?>" class="btn btn-primary <?php active('single.php');?>">More Info</a></div>
      </div>
    </div>
  </div>

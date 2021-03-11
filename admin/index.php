@@ -20,8 +20,8 @@
 								<td><img src="../img/<?php echo $value['img'] ?>" alt=""></td>
 								<td><?php echo $value['name'] ?></td>
 								<td><?php echo $value['price'] ?><?php if (!empty($value['price'])) {echo '$';} ?></td>
-								<td><a href="edit.php?id=<?php echo $value['id'] ?>" class="btn"><span>Edit</span></a></td>
-								<td><a href="?delete=<?php echo $value['id'] ?>" class="btn"><span>Delete</span></a></td>
+								<td><a href="edit.php?id=<?php echo $value['id'] ?>" class="btn" style="background-color: rgb(189, 234, 252);"><span style="color: black">Edit</span></a></td>
+								<td><a href="?delete=<?php echo $value['id'] ?>" class="btn" style="background-color: rgb(189, 234, 252);"><span style="color: black">Delete</span></a></td>
 							</tr>
 						<?php endforeach; ?>
 					</table>

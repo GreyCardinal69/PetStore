@@ -2,17 +2,17 @@
 <!--Header-->
 <!--BreadCrumb-->
 <?php $result=select('products',$_GET['id']);$r=mysqli_fetch_object($result);?>
-<div class="row mt-3">
-  <div class="col-md-6 d-none d-md-block d-sm-none bg-light mt-1 text-decoration-none bg-dark text-light pt-4 pb-2">
+<div class="row">
+  <div class="col-md-6 d-none d-md-block d-sm-none bg-light text-decoration-none bg-dark text-light pt-4 pb-2">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a class="text-decoration-none text-dark" href="index.php">Home</a></li>
-        <li class="breadcrumb-item"><a class="text-decoration-none text-dark" href="product.php">Products</a></li>
+        <li class="breadcrumb-item"><a class="text-decoration-none text-dark" href="index.php">Home Page</a></li>
+        <li class="breadcrumb-item"><a class="text-decoration-none text-dark" href="product.php">All Products</a></li>
         <li class="breadcrumb-item active text-primary" aria-current="page"><?php echo $r->name; ?></li>
       </ol>
     </nav>
   </div>
-  <div class="col-md-6 d-none d-md-block d-sm-none bg-light mt-1 text-decoration-none bg-dark text-light justify-content-center pt-1">
+  <div class="col-md-6 d-none d-md-block d-sm-none bg-light text-decoration-none bg-dark text-light justify-content-center pt-1">
     <form action="" class="form-inline col-12 col-md-auto pt-4 ml-auto">
       <label for="sortBy" class="mr-2 pt-1 ml-auto col-md-auto d-md-block d-none">Sort By</label>
       <select class="custom-select col-md-auto d-md-block d-none bg-dark text-light pt-1" id="sortBy">
@@ -55,7 +55,8 @@
             <div class="col-12 col-md-6">
               <div class="row">
                 <div class="col-12">
-                  <h3 class="font-weight-bold pl-5 mt-5"><?php echo $r->price.'֏'; ?></h3>
+                  <h3 class="font-weight-bold pl-5 mt-5">
+                    <?php echo $r->price.'֏'; ?></h3>
                 </div>
               </div>
               <form class="w-100 row pl-5" action="">
@@ -142,57 +143,59 @@
                 <li>Some info about the origin.</li>
                 <li>Some other info.</li>
                 <li>Please buy this product.</li>
-                </ul><?php echo $r->meta; ?>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-              <div class="card-body">
-                <span class="w-25">Care Level</span>
-                <div class="progress">
-                  <div class="progress-bar bg-primary" role="progressbar" style="width: 25%" aria-valuenow="10"
-                  aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
+              </ul>
+              <p class="font-weight-bold">Description</p>
+              <?php echo $r->meta; ?>
             </div>
           </div>
         </div>
-      </div>
-      <?php $result = select('products');?>
-      <?php $random = rand(1,5);$result = mysqli_query($db,"SELECT * FROM products order by RAND() limit 5");
-      $row = mysqli_fetch_array($result);
-      $random2 = rand(1,5);$result2 = mysqli_query($db,"SELECT * FROM products order by RAND() limit 5");
-      $row2 = mysqli_fetch_array($result2);
-      $random3 = rand(1,5);$result3 = mysqli_query($db,"SELECT * FROM products order by RAND() limit 5");
-      $row3 = mysqli_fetch_array($result3)?>
-      <div class="row d-md-block d-none">
-       <div class="d-flex justify-content-center">
-         <h4 class="mx-auto pt-4">Other Things You Might be Interested In</h4>
-       </div>
-       <div class="col-md-12 d-md-block col d-flex justify-content-space-around">
-        <div class="d-flex mt-3 border-top">
-          <div class="card col-md-3 d-md-block d-none mx-auto mt-5 d-flex justify-content-center" style="width: 24rem;">
-            <img src="img/<?php if(file_exists(getcwd().'/img/'.$row['img'])) {echo $row['img'];} else {echo 'empty.png';} ?>" class="card-img-top" alt="...">
-            <div class="card-body d-flex justify-content-center">
-              <a href="single.php?id=<?php echo $row['id'];?>" class="card-link"><?php echo $row['name']; ?></a>
-            </div>
-          </div>
-          <div class="card col-md-3 d-md-block d-none mx-auto mt-5" style="width: 24rem;">
-            <img src="img/<?php if(file_exists(getcwd().'/img/'.$row2['img'])) {echo $row2['img'];} else {echo 'empty.png';} ?>" class="card-img-top" class="card-img-top" alt="...">
-            <div class="card-body d-flex justify-content-center">
-              <a href="single.php?id=<?php echo $row2['id'];?>" class="card-link"><?php echo $row2['name']; ?></a>
-            </div>
-          </div>
-          <div class="card col-md-3 d-md-block d-none mx-auto mt-5" style="width: 24rem;">
-            <img src="img/<?php if(file_exists(getcwd().'/img/'.$row3['img'])) {echo $row3['img'];} else {echo 'empty.png';} ?>" class="card-img-top" class="card-img-top" alt="...">
-            <div class="card-body d-flex justify-content-center">
-              <a href="single.php?id=<?php echo $row3['id'];?>" class="card-link"><?php echo $row3['name']; ?></a>
+        <div class="card">
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              <span class="w-25">Care Level</span>
+              <div class="progress">
+                <div class="progress-bar bg-primary" role="progressbar" style="width: 25%" aria-valuenow="10"
+                aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <?php $result = select('products');?>
+    <?php $random = rand(1,5);$result = mysqli_query($db,"SELECT * FROM products order by RAND() limit 5");
+    $row = mysqli_fetch_array($result);
+    $random2 = rand(1,5);$result2 = mysqli_query($db,"SELECT * FROM products order by RAND() limit 5");
+    $row2 = mysqli_fetch_array($result2);
+    $random3 = rand(1,5);$result3 = mysqli_query($db,"SELECT * FROM products order by RAND() limit 5");
+    $row3 = mysqli_fetch_array($result3)?>
+    <div class="row d-md-block d-none">
+     <div class="d-flex justify-content-center">
+       <h4 class="mx-auto pt-4">Other Things You Might be Interested In</h4>
+     </div>
+     <div class="col-md-12 d-md-block col d-flex justify-content-space-around">
+      <div class="d-flex mt-3 border-top">
+        <div class="card col-md-3 d-md-block d-none mx-auto mt-5 d-flex justify-content-center" style="width: 24rem;">
+          <img src="img/<?php if(file_exists(getcwd().'/img/'.$row['img'])) {echo $row['img'];} else {echo 'empty.png';} ?>" class="card-img-top" alt="...">
+          <div class="card-body d-flex justify-content-center">
+            <a href="single.php?id=<?php echo $row['id'];?>" class="card-link"><?php echo $row['name']; ?></a>
+          </div>
+        </div>
+        <div class="card col-md-3 d-md-block d-none mx-auto mt-5" style="width: 24rem;">
+          <img src="img/<?php if(file_exists(getcwd().'/img/'.$row2['img'])) {echo $row2['img'];} else {echo 'empty.png';} ?>" class="card-img-top" class="card-img-top" alt="...">
+          <div class="card-body d-flex justify-content-center">
+            <a href="single.php?id=<?php echo $row2['id'];?>" class="card-link"><?php echo $row2['name']; ?></a>
+          </div>
+        </div>
+        <div class="card col-md-3 d-md-block d-none mx-auto mt-5" style="width: 24rem;">
+          <img src="img/<?php if(file_exists(getcwd().'/img/'.$row3['img'])) {echo $row3['img'];} else {echo 'empty.png';} ?>" class="card-img-top" class="card-img-top" alt="...">
+          <div class="card-body d-flex justify-content-center">
+            <a href="single.php?id=<?php echo $row3['id'];?>" class="card-link"><?php echo $row3['name']; ?></a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <!--Footer-->
-  <?php include 'inc/footer.php' ?>
+</div>
+<!--Footer-->
+<?php include 'inc/footer.php' ?>
